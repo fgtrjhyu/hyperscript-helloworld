@@ -1,0 +1,32 @@
+{
+  "name": "hyperscript-helloworld",
+  "version": "1.0.0",
+  "description": "Hello,world Hello,hyperscript world",
+  "homepage": "https://github.com/fgtrjhyu/hyperscript-helloworld#readme",
+  "bugs": {
+    "url": "https://github.com/fgtrjhyu/hyperscript-helloworld/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgtrjhyu/hyperscript-helloworld.git"
+  },
+  "license": "ISC",
+  "author": "Takao Eguchi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.12"
+  },
+  "dependencies": {
+    "hyperscript.org": "^0.9.14"
+  },
+  "volta": {
+    "node": "24.10.0",
+    "npm": "11.6.2"
+  }
+}

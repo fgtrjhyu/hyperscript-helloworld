@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello Hyperscript World!</title>
+    <style>
+      .red { color: red; background-color: white; }
+    </style>
+  </head>
+  <body>
+    <script type="text/hyperscript">
+      behavior HelloWorld(target, theme)
+        on click
+          log `Hello ${target.id} ${theme} World!`
+          call target.classList.toggle(theme)
+        end
+      end
+    </script>
+    <h1>Hello Hyperscript World!</h1>
+    <button id="Hyperscript" _="install HelloWorld(target: #Hyperscript, theme: 'red')">
+      Hello Hyperscript World
+    </button>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
